@@ -1,0 +1,22 @@
+{
+  "name": "databasechallenge",
+  "version": "1.0.0",
+  "description": "Projecto Educativo ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raandino/DataBaseChallenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Raandino/DataBaseChallenge/issues"
+  },
+  "homepage": "https://github.com/Raandino/DataBaseChallenge#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
