@@ -7,7 +7,7 @@
     "dev:start": "nodemon  --exec babel-node ./src/server/index.js",
     "build": "babel ./src/server/index.js -d ./build/server/",
     "start": "npm run build && node ./build/server",
-    "clean" : "rimraf ./build"
+    "clean": "rimraf ./build"
   },
   "repository": {
     "type": "git",
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Raandino/DataBaseChallenge#readme",
   "dependencies": {
+    "@babel/preset-env": "^7.7.1",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mssql": "^5.1.0",
