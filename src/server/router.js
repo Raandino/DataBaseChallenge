@@ -1,9 +1,13 @@
 import { Router } from 'express'
-
+import routerFactura from './rutas/factura'
+import routerInventario from './rutas/inventario'
+import routerUsuario from './rutas/usuario'
+import routerPlatillo from './rutas/platillo'
+import routerPermiso from './rutas/permiso'
 const router = new Router()
-router.use('/api', (req, res) => {
-    res.send('API')
-})
-
-
+router.use('/facturas', routerFactura)
+router.user('/inventarios',routerInventario)
+router.user('/usuarios',routerUsuario)
+router.user('/platillos',routerPlatillos)
+router.user('/permisos',routerPermiso)
 export default router
