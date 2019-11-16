@@ -1,0 +1,51 @@
+[
+  {
+    "IdFactura": 1,
+    "nombreCliente": "roberto",
+    "precioTotal": 123.00,
+    "totalDescontado": 0.00,
+    "fecha": "2019-11-07T00:00:00"
+  },
+  {
+    "IdFactura": 2,
+    "nombreCliente": "alex",
+    "precioTotal": 500.00,
+    "totalDescontado": 0.00,
+    "fecha": "2019-12-07T00:00:00"
+  },
+  {
+    "IdFactura": 3,
+    "nombreCliente": "rodolfo",
+    "precioTotal": 420.00,
+    "totalDescontado": 0.00,
+    "fecha": "2019-10-11T00:00:00"
+  },
+  {
+    "IdFactura": 4,
+    "nombreCliente": "jacobo",
+    "precioTotal": 333.00,
+    "totalDescontado": 0.00,
+    "fecha": "2019-09-30T00:00:00"
+  },
+  {
+    "IdFactura": 5,
+    "nombreCliente": "josue",
+    "precioTotal": 75.00,
+    "totalDescontado": 0.00,
+    "fecha": "2019-10-15T00:00:00"
+  },
+  {
+    "IdFactura": 6,
+    "nombreCliente": "carlos",
+    "precioTotal": 100.00,
+    "totalDescontado": 0.00,
+    "fecha": "2019-10-08T00:00:00"
+  },
+  {
+    "IdFactura": 7,
+    "nombreCliente": "marco",
+    "precioTotal": 120.00,
+    "totalDescontado": 0.00,
+    "fecha": "2019-10-06T00:00:00"
+  }
+]

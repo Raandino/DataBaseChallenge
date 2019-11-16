@@ -1,7 +1,4 @@
-use master
-go
-
-drop database if exists projecto;
+drop database  projecto;
 GO
 
 create database projecto;
@@ -44,7 +41,8 @@ create table Factura(
     IdFactura int IDENTITY(1,1) PRIMARY KEY,
     nombreCliente NVARCHAR(200) not null,
     precioTotal numeric(9,2) not null,
-    totalDescontado numeric(9,2) not null
+    totalDescontado numeric(9,2) not null,
+    fecha DATE not null
  --   iva numeric(9,2) not null
 )
 GO
