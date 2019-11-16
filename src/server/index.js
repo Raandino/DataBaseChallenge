@@ -3,7 +3,7 @@ import router from './router'
 import pool from './db'
 const app = express()
 
-app.use('/', router)
+app.use('/api', router)
 app.get('/',async (req, res) => {
     try {
         await pool.connect()
