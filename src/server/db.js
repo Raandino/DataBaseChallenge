@@ -1,4 +1,5 @@
-const sql = require('mssql')
+
+import mssql from'mssql'
 require('dotenv').config()
 
 const dbConfig = {
@@ -9,10 +10,5 @@ const dbConfig = {
     encrypt: true
 }
 
-const pool = new sql.ConnectionPool(dbConfig)
-    .connect()
-    .then((pool) => {
-        return pool
-    })
-
-module.exports = pool 
+const pool = new mssql.ConnectionPool(dbConfig)
+export default pool

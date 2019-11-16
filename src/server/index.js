@@ -1,14 +1,16 @@
-import  * as express  from 'express'
+import express from 'express'
+import router from './router'
+import pool from './db'
 const app = express()
-//const sqlConnection = require('./db')
 
+app.use('/', router)
 app.get('/',async (req, res) => {
     try {
-     //   const pool = await sqlConnection
-       // const request = pool.request()
+        await pool.connect()
+         const request = pool.request()
        // console.log(request)
-       // const result = await request.query('select * from Unidad')
-       // console.log(JSON.stringify(result,null, 2))
+        const result = await request.query('select * from Unidad')
+        console.log(JSON.stringify(result,null, 2))
         res.send('Hello')
     } catch (error) {
         console.log(error)
