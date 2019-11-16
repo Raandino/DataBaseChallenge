@@ -8,6 +8,6 @@ const router = new Router()
 router.use('/facturas', routerFactura)
 router.user('/inventarios',routerInventario)
 router.user('/usuarios',routerUsuario)
-router.user('/platillos',routerPlatillos)
+router.user('/platillos',routerPlatillo)
 router.user('/permisos',routerPermiso)
 export default router
