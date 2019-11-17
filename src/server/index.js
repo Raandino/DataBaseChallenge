@@ -17,5 +17,5 @@ app.get('/',async (req, res) => {
         res.send(error)
    }
 })
+
 app.listen(3000, () => console.log('Server escuchando en el puerto 3000'))
-console.log('ay lmao')

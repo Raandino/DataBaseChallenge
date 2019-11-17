@@ -11,4 +11,5 @@ const dbConfig = {
 }
 
 const pool = new mssql.ConnectionPool(dbConfig)
+
 export default pool
