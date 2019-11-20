@@ -41,6 +41,7 @@ GO
 
 create table Factura(
     IdFactura int IDENTITY(1,1) PRIMARY KEY,
+    idUsuario int not null,
     nombreCliente NVARCHAR(200) not null,
     precioTotal numeric(9,2) not null,
     totalDescontado numeric(9,2) not null,
@@ -76,7 +77,7 @@ GO
 create table Usuario_Permiso(
     IdUsuarioPermiso int IDENTITY(1,1) PRIMARY key,
     idUsuario int not null,
-    idPermiso int not null,
+    idPermiso int not null
 )
 
 alter table Platillo_Ingrediente
@@ -90,3 +91,7 @@ alter table DetalleFactura
     add constraint FK_DF_Platillo FOREIGN KEY (idPlatillo) REFERENCES Platillo(IdPlatillo) on delete cascade on update cascade,
     constraint FK_DF_Factura FOREIGN KEY(idFactura) REFERENCES Factura(IdFactura) on delete cascade on update cascade
 go
+
+
+alter table Factura 
+    add CONSTRAINT FK_Factura_Usuario FOREIGN key (idUsuario) REFERENCES Usuario(IdUsuario) on delete cascade on update cascade;
