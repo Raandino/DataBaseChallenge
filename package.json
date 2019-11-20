@@ -4,10 +4,11 @@
   "description": "Projecto Educativo ",
   "main": "index.js",
   "scripts": {
-    "dev:start": "nodemon  --exec babel-node ./src/server/index.js",
-    "build": "babel ./src/server/index.js -d ./build/server/",
+    "dev:server": "nodemon  --exec babel-node ./src/server/index.js",
+    "build": "npm run clean && babel ./src/server/index.js -d ./build/server/",
     "start": "npm run build && node ./build/server",
-    "clean": "rimraf ./build"
+    "clean": "rimraf ./build",
+    "dev:fe-watch": "parcel serve ./src/frontend/index.html --out-dir ./src/public"
   },
   "repository": {
     "type": "git",
@@ -30,6 +31,9 @@
     "@babel/cli": "^7.7.0",
     "@babel/core": "^7.7.2",
     "@babel/node": "^7.7.0",
-    "@babel/preset-env": "^7.7.1"
+    "@babel/preset-env": "^7.7.1",
+    "parcel-bundler": "^1.12.4",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
   }
 }
