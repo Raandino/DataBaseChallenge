@@ -13,7 +13,12 @@ insert into Unidad values ('Taza')
 
 
 --Usuario
-
+insert into Usuario 
+values
+('alex',CAST('SaladoPescado10' as BINARY(32)), 'Alex','Cuadra'),
+('rodolfo',CAST('SaladoPescado10' as BINARY(32)), 'Rodolfo','Andrino'),
+('jacobo',CAST('SaladoPescado10' as BINARY(32)), 'Jacobo','Amador'),
+('roberto',CAST('SaladoPescado10' as BINARY(32)), 'Roberto','Sanchez')
 
 --Permiso
 insert into Permiso values('lmao',3),
@@ -32,15 +37,16 @@ INSERT into Platillo_Ingrediente values(1,1,2,25)
 
 
 --Factura
+select * from Factura
 Insert into Factura
 VALUES
-('roberto',123,0,'2019-11-07'),
-('alex',500,0,'2019-12-07'),
-('rodolfo',420,0,'2019-10-11'),
-('jacobo',333,0,'2019-9-30'),
-('josue',75,0,'2019-10-15'),
-('carlos',100,0,'2019-10-08'),
-('marco',120,0,'2019-10-06')
+(1,'roberto',123,0,'2019-11-07'),
+(1,'alex',500,0,'2019-12-07'),
+(2,'rodolfo',420,0,'2019-10-11'),
+(2,'jacobo',333,0,'2019-9-30'),
+(3,'josue',75,0,'2019-10-15'),
+(3,'carlos',100,0,'2019-10-08'),
+(3,'marco',120,0,'2019-10-06')
 
 Select year(fecha), month(fecha), day(fecha)
 from Factura;
