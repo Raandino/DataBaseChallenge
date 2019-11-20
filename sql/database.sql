@@ -1,3 +1,5 @@
+use master;
+GO
 drop database  projecto;
 GO
 
